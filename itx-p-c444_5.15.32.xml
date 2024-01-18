@@ -16,7 +16,6 @@
   <remote fetch="https://github.com/nxp-imx/" name="CAF"/>   
   <remote fetch="https://github.com/WinSystems" name="winsys"/>
   <remote fetch="https://github.com/nxp-imx-support/" name="imx-support"/>     
-  <remote fetch="https://github.com/WinSystems/meta-mylayer/" name="mylayer"/>
   
   <project name="fsl-community-bsp-base" path="sources/base" remote="community" revision="60f79f7af60537146298560079ae603260f0bd14" upstream="kirkstone">
     <linkfile dest="README" src="README"/>
@@ -50,7 +49,7 @@
      <linkfile src="tools/winsys-setup-release.sh" dest="winsys-setup-release.sh"/>
   </project>
 
-  <project remote="mylayer" name="meta-mylayer" path="sources/meta-mylayer" revision="main">
+  <project remote="winsys" name="meta-mylayer" path="sources/meta-mylayer" revision="main">
      <linkfile src="tools/mylayer-setup-release.sh" dest="mylayer-setup-release.sh"/>
   </project>
 
